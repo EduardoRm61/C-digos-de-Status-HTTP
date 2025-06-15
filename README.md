@@ -8,7 +8,7 @@
 #### Sua solicitação foi bem-sucedida e o servidor deve responder de acordo com o protocolo http
 #### utilizado, tais como:
 
-1. GET
+1. `GET`:
 2. DELETE
 3. PUT
 4. POST
