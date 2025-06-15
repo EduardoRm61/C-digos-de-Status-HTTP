@@ -8,8 +8,8 @@
 #### Sua solicitação foi bem-sucedida e o servidor deve responder de acordo com o protocolo http
 #### utilizado, tais como:
 
-1. `GET`:
-2. DELETE
-3. PUT
-4. POST
-5. PATCH
+1. `GET`: O recurso da requisição foi obtido com sucesso e está presente no corpo da resposta. Esse código é comum em operações de leitura ou consultas de dados.
+2. `DELETE`:
+3. `PUT`:
+4. `POST`:
+5. `PATCH`: 
