@@ -13,3 +13,11 @@
 3. `PUT`: Indica que a requisição para atualizar uma informação ou recurso ocorreu com êxito, o servidor normalmente da um retorno de bem sucedido para a operação.
 4. `POST`: Indica que a requisição para criar um novo recurso foi bem-sucedida. O Servidor retorna este status code após ter criado com sucesso as modificações requeridas pelo cliente.
 5. `PATCH`: A modificação parcial do recurso foi realizada com sucesso. O servidor aplicou apenas as alterações especificadas.
+
+#### 201: Criado
+#### 202: Aceito
+#### 203: Não autorizado
+#### 204: Nenhum conteúdo
+#### 205: Reset
+#### 206:
+#### 207: 
