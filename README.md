@@ -15,9 +15,15 @@
 5. `PATCH`: A modificação parcial do recurso foi realizada com sucesso. O servidor aplicou apenas as alterações especificadas.
 
 #### 201: Criado
+#### Esse status code sinaliza que a solicitação do cliente foi aceita pelo servidor e o mesmo resultou 
+#### na criação de um ou mais novos recursos. O recurso principal criado pela solicitação é identificado 
+#### por um campo de cabeçalho *Location* na resposta ou, se nenhum campoo de cabeçanho *Location* for
+#### recebido, pelo URL de destino.
+
+
 #### 202: Aceito
-#### 203: Não autorizado
-#### 204: Nenhum conteúdo
-#### 205: Reset
-#### 206:
-#### 207: 
+#### 203: Informações não autorizadas
+#### 204: Sem conteúdo
+#### 205: Reset / Redefinir conteúdo
+#### 206: Conteúdo parcial
+#### 207: Status Multi (Especifíco do WebDAV, não oficial)
