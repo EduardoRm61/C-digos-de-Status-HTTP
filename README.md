@@ -27,7 +27,10 @@ O recusor foi aceito, embora seu conteúdo ainda não tenha sido processado. Tra
 #### 203: Non-Authoritative Information
 O status code 203 (Non-Authoritative Information) indica que a requisição foi bem-sucedida, mas a resposta recebida pelo cliente *não é exatamente a mesma* enviada pelo servidor de origem — ela foi modificada por um intermediário (como um proxy ou CDN). Por exemplo: um proxy pode comprimir uma imagem ou filtrar dados sensíveis antes de repassar a resposta, e o 203 avisa que essa versão não é 'oficial', mas ainda assim válida. O seu uso é raro e mesmo certos proxies retornam 200 *OK*
 
-#### 204: Sem conteúdo
+#### 204: Not Content
+Aqui o servidor recebeu a requisição do cliente e a mesma foi bem-sucedida, embora não haja nada para retornar no campo da resposta.
+- ela é útil em um *DELETE* bem-sucedido, onde o recurso foi removido e não há mais nada para dizer
+- Também em casos de *PUT* e *POST* qua atualizou um recuso, mas não precisa enviar confirmação
 #### 205: Reset / Redefinir conteúdo
 #### 206: Conteúdo parcial
 #### 207: Status Multi (Especifíco do WebDAV, não oficial)
