@@ -22,6 +22,8 @@
 
 
 #### 202: Aceito
+O recusor foi aceito, embora seu conteúdo ainda não tenha sido processado. Trata-se de uma resposta que o servidor envia como forma de validar que o recurso foi recebido, mas não finalizada, uma resposta evasiva por parte do servidor, algo como "Recebi o seu pedido, mas o relatório ainda não está pronto". O servidor aceitou a requisição do usuário, mas seu processamento pode demorar por ser algo assíncrono (ou seja, o servidor não bloqueia o cliente aguardando a conclusão).
+
 #### 203: Informações não autorizadas
 #### 204: Sem conteúdo
 #### 205: Reset / Redefinir conteúdo
