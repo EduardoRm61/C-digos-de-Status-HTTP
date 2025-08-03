@@ -38,4 +38,7 @@ Aqui o servidor responde: "Sua requisição foi bem-sucedida, mas o cliente deve
 - Se uma ação requer que o cliente volte ao estado inicial (ex: um editor de texto após salvar), o 205 pode ser usado para disparar essa limpeza.
 
 #### 206: Conteúdo parcial
-#### 207: Status Multi (Especifíco do WebDAV, não oficial)
+Essa resposta tem um propósito mais espercífico e técnico, aqui o servidor entrega *apenas uma part do recurso solicitado*, porque o cliente pediu explicitamente isso (via cabeçalho *RANGE*). É comum em downloads pausáveis, steaming de vídeos ou manipulação de arquivos grandes.
+- Baixar um vídeo de 1GB em pedaços de 100MB (para evitar falhas ou permitir retomada).
+- Servidor de vídeo (YouTube, Netflix) usam 206 para enviar trechos do aequivos conforme o usuário avança.
+- Caso um download falhou no meio, o cliente pode pedir só a parte faltante.
