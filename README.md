@@ -29,8 +29,13 @@ O status code 203 (Non-Authoritative Information) indica que a requisição foi 
 
 #### 204: Not Content
 Aqui o servidor recebeu a requisição do cliente e a mesma foi bem-sucedida, embora não haja nada para retornar no campo da resposta.
-- ela é útil em um *DELETE* bem-sucedido, onde o recurso foi removido e não há mais nada para dizer
-- Também em casos de *PUT* e *POST* qua atualizou um recuso, mas não precisa enviar confirmação
-#### 205: Reset / Redefinir conteúdo
+- ela é útil em um *DELETE* bem-sucedido, onde o recurso foi removido e não há mais nada para dizer.
+- Também em casos de *PUT* e *POST* qua atualizou um recuso, mas não precisa enviar confirmação.
+  
+#### 205: Reset Content 
+Aqui o servidor responde: "Sua requisição foi bem-sucedida, mas o cliente deve *reiniciar a visualização atual (como um formulário ou documento).*".
+- Depois de um *POST* (comu um formulário de login), o servidor pode responder com 205 para indicar que o navegador deve *limpar os campos* (evitando reenvio acidental).
+- Se uma ação requer que o cliente volte ao estado inicial (ex: um editor de texto após salvar), o 205 pode ser usado para disparar essa limpeza.
+
 #### 206: Conteúdo parcial
 #### 207: Status Multi (Especifíco do WebDAV, não oficial)
